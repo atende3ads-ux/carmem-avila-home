@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carmem Avila — Home (frame 1440 p/ Figma)</title>
+
+<!-- ============================================================
+     VERSÃO PARA IMPORTAÇÃO NO FIGMA — frame Desktop 1440  ·  v2
+     Espelha o index.html (leveza / Montserrat Light). Não é produção.
+
+     Diferenças para o importador:
+     · px fixos (sem clamp/vw/rem) · zero animação/JS/opacity:0
+     · sem sticky, backdrop-filter, color-mix · sem truque 100vw
+     · alturas explícitas · imagens locais
+     Fonte: Montserrat (200/300/400/500) — existe no Figma.
+     ============================================================ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#F7F5F2;
+  --paper-deep:#EFECE7;
+  --ink:#191614;
+  --ink-soft:#7A736C;
+  --rule:#DAD6CF;
+  --terra:#A8542C;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  width:1440px;background:var(--paper);color:var(--ink);
+  font-family:'Montserrat',sans-serif;font-weight:400;font-size:16px;line-height:1.85;letter-spacing:.08px;
+}
+img{display:block}
+.wrap{width:1440px;padding:0 110px}          /* conteúdo = 1220 */
+
+.label{font-size:11px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--ink-soft)}
+.dot{color:var(--terra);font-size:8px;vertical-align:middle;margin-right:6px}
+.hi{font-weight:500;color:var(--ink)}
+
+/* ---------- HEADER ---------- */
+.hd{width:1440px;padding:30px 110px;display:flex;align-items:center;justify-content:space-between;background:var(--paper)}
+.hd img{width:150px}
+.nav{display:flex;gap:44px}
+.nav a{font-size:11.5px;font-weight:400;letter-spacing:2.2px;text-transform:uppercase;color:var(--ink-soft)}
+
+/* ---------- HERO ---------- */
+.hero{padding:150px 110px 0}
+h1{font-size:102px;font-weight:200;line-height:1.03;letter-spacing:-2px;width:900px;margin-top:26px}
+h1 .hi{font-weight:400}
+.lead{width:560px;margin:48px 0 90px;font-size:20px;font-weight:300;line-height:1.75;color:var(--ink-soft)}
+.hero-img{width:1440px;height:680px;object-fit:cover}
+.cap{width:1440px;padding:16px 110px 0;display:flex;justify-content:space-between}
+
+/* ---------- SEÇÕES ---------- */
+.sec{padding:210px 110px}
+.sec-head{display:flex;gap:100px}
+.sec-head .col-l{width:330px;flex:none}
+.sec-head .col-r{width:790px;flex:none}
+
+.manifesto{font-size:58px;font-weight:200;line-height:1.14;letter-spacing:-.9px;width:640px;margin-bottom:34px}
+.manifesto .hi{font-weight:400}
+.mbody{width:580px;font-weight:300;color:var(--ink-soft)}
+.proj-lead{width:600px;font-weight:300;color:var(--ink-soft);margin-top:26px}
+.proj-lead .hi{color:var(--ink)}
+
+/* Pilares */
+.pillars{border-top:1px solid var(--rule);margin-top:130px}
+.pillar{display:flex;gap:80px;padding:56px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.pillar .num{width:24px;flex:none;font-size:11px;font-weight:500;letter-spacing:2px;color:var(--terra)}
+.pillar h3{width:430px;flex:none;font-size:33px;font-weight:300;letter-spacing:-.3px;line-height:1.18}
+.pillar p{width:560px;flex:none;font-weight:300;color:var(--ink-soft)}
+
+/* ---------- PROJETOS ---------- */
+.row{display:flex;gap:56px;margin-top:100px}
+.card img{width:100%;object-fit:cover}
+.card .fc{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:18px}
+.card h3{font-size:20px;font-weight:400;letter-spacing:-.1px}
+.card .meta{font-size:11px;font-weight:500;letter-spacing:2.2px;text-transform:uppercase;color:var(--ink-soft);white-space:nowrap}
+
+.w487{width:487px;flex:none} .w487 img{height:649px}
+.w733{width:733px;flex:none} .w733 img{height:549px}
+.w1220{width:1220px;flex:none} .w1220 img{height:522px}
+.w582{width:582px;flex:none} .w582 img{height:436px}
+.push{margin-top:100px}
+
+.more{display:inline-flex;gap:16px;margin-top:110px;font-size:12px;font-weight:500;letter-spacing:2.6px;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:8px}
+
+/* ---------- SOBRE ---------- */
+.about{background:var(--paper-deep);padding:210px 110px}
+.about-in{display:flex;gap:120px;align-items:center}
+.about img{width:470px;height:627px;flex:none;object-fit:cover;object-position:center 20%}
+.about-tx{width:630px;flex:none}
+.bio{font-size:37px;font-weight:200;line-height:1.35;letter-spacing:-.4px;margin:16px 0 30px}
+.bio .hi{font-weight:400}
+.about-tx .p{width:520px;font-weight:300;color:var(--ink-soft)}
+.facts{display:flex;border-top:1px solid var(--rule);margin-top:56px}
+.facts div{width:158px;flex:none;padding:24px 20px 24px 0;border-bottom:1px solid var(--rule)}
+.facts strong{display:block;font-size:42px;font-weight:200;letter-spacing:-1px;line-height:1}
+.facts span{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--ink-soft)}
+
+/* ---------- CTA ---------- */
+.cta{padding:210px 110px;text-align:center;border-top:1px solid var(--rule)}
+.cta h2{font-size:74px;font-weight:200;letter-spacing:-1.4px;line-height:1.06;width:880px;margin:24px auto 24px}
+.cta h2 .hi{font-weight:400}
+.cta .p{width:480px;margin:0 auto;font-weight:300;color:var(--ink-soft)}
+.btn{display:inline-flex;align-items:center;gap:12px;margin-top:52px;background:var(--ink);color:var(--paper);padding:20px 44px;border-radius:999px;font-size:12px;font-weight:500;letter-spacing:2.4px;text-transform:uppercase}
+.btn svg{width:16px;height:16px;fill:currentColor}
+
+/* ---------- FOOTER ---------- */
+.ft{background:var(--ink);color:var(--paper);padding:130px 110px 36px}
+.ft-cols{display:flex;gap:72px;padding-bottom:90px}
+.ft-cols>div{width:270px;flex:none}
+.ft .label{color:#847D77}
+.ft p{margin-top:14px;font-size:16px;font-weight:300}
+.ft-bot{display:flex;justify-content:space-between;border-top:1px solid #3A3532;padding-top:26px;font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:#847D77}
+</style>
+</head>
+<body>
+
+<!-- ▸ HEADER -->
+<div class="hd">
+  <img src="assets/logo-carmem.png" width="150" height="78" alt="Carmem Avila Arquitetura">
+  <div class="nav"><a>Projetos</a><a>Sobre</a><a>Contato</a><a>Blog</a></div>
+</div>
+
+<!-- ▸ HERO -->
+<div class="hero">
+  <p class="label"><span class="dot">●</span> Arquitetura brasileira sustentável e humanizada</p>
+  <h1>Projetos que <span class="hi">transformam</span> vidas.</h1>
+  <p class="lead">Unimos design inteligente, bem-estar e responsabilidade social para criar espaços que inspiram, acolhem e deixam um legado positivo.</p>
+</div>
+<img class="hero-img" src="assets/aldeia-da-serra.jpg" width="1200" height="900" alt="Residência Aldeia da Serra">
+<div class="cap">
+  <span class="label">Residência Aldeia da Serra</span>
+  <span class="label">Residencial &nbsp;/&nbsp; SP</span>
+</div>
+
+<!-- ▸ MISSÃO -->
+<div class="sec">
+  <div class="sec-head">
+    <div class="col-l"><p class="label">01 &nbsp;—&nbsp; Nossa missão</p></div>
+    <div class="col-r">
+      <p class="manifesto">Transformar a vida das pessoas através da <span class="hi">arquitetura</span>.</p>
+      <p class="mbody">Mais do que edifícios, projetamos ambientes para viver histórias, conexões, memória e experiências. Unimos técnica, sensibilidade e visão estratégica para inspirar quem vive, trabalha ou visita. Esse é o nosso objetivo: através da experiência da arquitetura, cuidar de quem vive o espaço.</p>
+    </div>
+  </div>
+
+  <div class="pillars">
+    <div class="pillar"><span class="num">01</span><h3>Qualidade de vida</h3><p>Ambientes pensados para promover bem-estar, conforto e produtividade no dia a dia.</p></div>
+    <div class="pillar"><span class="num">02</span><h3>Sustentabilidade inteligente</h3><p>Soluções arquitetônicas que respeitam o meio ambiente e otimizam recursos.</p></div>
+    <div class="pillar"><span class="num">03</span><h3>Impacto social e cultural</h3><p>Arquitetura como ferramenta de transformação — pela qualidade de vida, pelo respeito às nossas origens culturais e pelo legado urbano.</p></div>
+  </div>
+</div>
+
+<!-- ▸ PROJETOS -->
+<div class="sec" style="padding-top:0">
+  <div class="sec-head">
+    <div class="col-l"><p class="label">02 &nbsp;—&nbsp; Projetos</p></div>
+    <div class="col-r">
+      <p class="manifesto" style="width:560px">Projetos em diferentes escalas, sempre com foco na <span class="hi">experiência humana</span>.</p>
+      <p class="proj-lead">Atuamos em diversas tipologias — <span class="hi">residencial, corporativo e hospitalidade</span> — sempre com o mesmo compromisso: promover qualidade de vida através da arquitetura. Cuidamos da experiência completa, da concepção arquitetônica à execução de interiores, marcenaria e acabamentos.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card w487">
+      <img src="assets/residencia-vila.jpg" width="1100" height="1467" alt="Residência de Vila">
+      <div class="fc"><h3>Residência de Vila</h3><span class="meta">Residencial</span></div>
+    </div>
+    <div class="card w733 push">
+      <img src="assets/republica-gastronomica.jpg" width="1300" height="975" alt="República Gastronômica">
+      <div class="fc"><h3>República Gastronômica</h3><span class="meta">Hospitalidade</span></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card w1220">
+      <img src="assets/acqua-ville.jpg" width="1900" height="814" alt="Academia Acqua Ville">
+      <div class="fc"><h3>Academia Acqua Ville</h3><span class="meta">Hospitalidade &nbsp;/&nbsp; SP</span></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="card w582">
+      <img src="assets/editora-carochinha.jpg" width="1200" height="900" alt="Editora Carochinha">
+      <div class="fc"><h3>Editora Carochinha</h3><span class="meta">Corporativo</span></div>
+    </div>
+    <div class="card w582 push">
+      <img src="assets/sesc-mogi.jpg" width="2000" height="1125" alt="Sesc Mogi das Cruzes">
+      <div class="fc"><h3>Sesc Mogi das Cruzes</h3><span class="meta">Institucional</span></div>
+    </div>
+  </div>
+
+  <a class="more">Conheça todos os projetos <span>→</span></a>
+</div>
+
+<!-- ▸ SOBRE -->
+<div class="about">
+  <div class="about-in">
+    <img src="assets/carmem-retrato.jpg" width="314" height="512" alt="Carmem Avila, arquiteta e urbanista">
+    <div class="about-tx">
+      <p class="label">03 &nbsp;—&nbsp; Sobre</p>
+      <p class="bio">Arquiteta e urbanista com mais de <span class="hi">30 anos de experiência</span> e cerca de 100 projetos autorais construídos em diferentes escalas — residencial, corporativo e hospitalidade.</p>
+      <p class="p">Reconhecida por prêmios e publicações como Casa Vogue e AU, Carmem Avila lidera seu escritório desde 2004, unindo design inteligente, rigor técnico e propósito humano para criar espaços que inspiram qualidade de vida.</p>
+      <div class="facts">
+        <div><strong>30+</strong><span>Anos de trajetória</span></div>
+        <div><strong>100+</strong><span>Projetos autorais</span></div>
+        <div><strong>2004</strong><span>Escritório próprio</span></div>
+        <div><strong>Vogue</strong><span>Casa Vogue &amp; AU</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ▸ CTA — botão a ser substituído pelo do Google Ads -->
+<div class="cta">
+  <p class="label"><span class="dot">●</span> Vamos conversar</p>
+  <h2>Quer transformar seu <span class="hi">espaço</span> e gerar impacto positivo?</h2>
+  <p class="p">Agende uma conversa gratuita com o nosso escritório e descubra como podemos ajudar.</p>
+  <a class="btn">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.5 14.2c-.2.7-1.3 1.3-1.8 1.3-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.4-1-2.6s.6-1.8.9-2.1c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.2.3.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.5.3.1.2.1.6-.1 1.2Z"/></svg>
+    Agende uma conversa
+  </a>
+</div>
+
+<!-- ▸ FOOTER -->
+<div class="ft">
+  <div class="ft-cols">
+    <div><p class="label">Escritório</p><p>Carmem Avila Arquitetura<br>São Paulo — SP</p></div>
+    <div><p class="label">Telefone</p><p>11 96597-6396<br>11 97450-8572</p></div>
+    <div><p class="label">Atuação</p><p>Residencial · Corporativo<br>Hospitalidade · Interiores</p></div>
+    <div><p class="label">Social</p><p>Instagram<br>Facebook</p></div>
+  </div>
+  <div class="ft-bot">
+    <span>© 2026 Carmem Avila Arquitetura</span>
+    <span>Arquitetura sustentável e humanizada</span>
+  </div>
+</div>
+
+</body>
+</html>
