@@ -198,6 +198,15 @@ section{padding:clamp(104px,15vw,240px) 0}
 .facts strong{display:block;font-size:clamp(1.8rem,2.9vw,2.5rem);font-weight:200;letter-spacing:-.02em;line-height:1}
 .facts span{font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
 
+/* faixa de publicações (autoridade) — wordmarks provisórios, trocar por SVG oficial */
+.press{margin-top:clamp(34px,4vw,52px)}
+.press-label{font-size:.68rem;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+.press ul{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:clamp(22px,3.2vw,46px)}
+.press li{color:var(--ink);opacity:.72;line-height:1}
+.pub-forbes{font-family:Georgia,'Times New Roman',serif;font-weight:700;font-size:clamp(1.5rem,2.5vw,2rem);letter-spacing:-.01em}
+.pub-vogue{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:400;font-size:clamp(1.2rem,2vw,1.6rem)}
+.pub-au{font-weight:500;letter-spacing:.3em;font-size:clamp(1.05rem,1.7vw,1.35rem)}
+
 /* ============ CTA — faixa colorida (Balaio) ============ */
 .cta{background:var(--band);color:var(--cream);text-align:center}
 .cta .sec-title{color:color-mix(in srgb,var(--cream) 82%,transparent)}
@@ -406,15 +415,28 @@ footer .label{color:color-mix(in srgb,var(--cream) 45%,transparent)}
             corporativo e hospitalidade.
           </p>
           <p class="about-copy rv" style="transition-delay:.14s">
-            Reconhecida por prêmios e publicações como Casa Vogue e AU, Carmem Avila lidera
-            seu escritório desde 2004, unindo design inteligente, rigor técnico e propósito
-            humano para criar espaços que inspiram qualidade de vida.
+            Reconhecida por prêmios e publicações como Forbes, Casa Vogue e AU, Carmem Avila
+            lidera seu escritório desde 2004, unindo design inteligente, rigor técnico e
+            propósito humano para criar espaços que inspiram qualidade de vida.
           </p>
           <div class="facts rv" style="transition-delay:.2s;margin-top:clamp(40px,5vw,60px)">
             <div><strong>30+</strong><span>Anos de trajetória</span></div>
             <div><strong>100+</strong><span>Projetos autorais</span></div>
             <div><strong>2004</strong><span>Escritório próprio</span></div>
-            <div><strong>Vogue</strong><span>Casa Vogue &amp; AU</span></div>
+            <div><strong>IAB</strong><span>Prêmio 1999</span></div>
+          </div>
+
+          <!-- Faixa de publicações — autoridade.
+               ⚠️ SUBSTITUIR os wordmarks de texto pelos LOGOS OFICIAIS (SVG) e, de
+               preferência, linkar cada item para a matéria (mais forte e verificável).
+               Confirmar com a Carmem a matéria da Forbes. -->
+          <div class="press rv" style="transition-delay:.26s">
+            <span class="press-label">Publicações</span>
+            <ul>
+              <li class="pub-forbes">Forbes</li>
+              <li class="pub-vogue">Casa Vogue</li>
+              <li class="pub-au">AU</li>
+            </ul>
           </div>
         </div>
       </div>
